@@ -4,7 +4,7 @@ VPATH = src:../inc
 astro: main.o admin.o
 	gcc main.o admin.o -o astro -Wall
 
-main.o: main.c admin.h
+main.o: main.c main.h admin.h
 	gcc -c main.c -Wall
 
 admin.o: admin.c admin.h
