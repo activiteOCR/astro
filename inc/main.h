@@ -18,6 +18,6 @@ typedef struct
 
 void print_help(char * prgName);
 void print_error(char * prgName, const char * errStr);
-void menu_utilisateur(void);
-void menu_admin(FILE *rep, FILE *fic, REPONSE *p);
+void menu_utilisateur(FILE *rep, EMAIL *q);
+void menu_admin(FILE *rep, FILE *fic, FILE *mot, REPONSE *p);
 

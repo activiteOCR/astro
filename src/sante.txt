@@ -1,0 +1,12 @@
+
+sante
+malade
+symptome
+forme
+mal
+etat
+docteur
+malaise
+hopital
+maladie
+regime

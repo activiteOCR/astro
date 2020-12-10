@@ -1,0 +1,292 @@
+
+ Date de reception : Thu Dec 10 12:11:18 2020
+|Emetteur: 
+|Objet: tchouk
+|Contenu: test micro
+
+ Date de reception : Thu Dec 10 12:14:49 2020
+|Emetteur: 
+|Objet: tt
+|Contenu: tt
+
+ Date de reception : Thu Dec 10 12:16:12 2020
+|Emetteur: 
+|Objet: toto
+|Contenu: tutu
+
+ Date de reception : Thu Dec 10 12:28:31 2020
+|Emetteur: 
+|Objet: rr
+|Contenu: rr
+
+ Date de reception : Thu Dec 10 12:30:11 2020
+|Emetteur: julien.terrier@st.com
+|Objet: test micro
+|Contenu: chu
+
+ Date de reception : Thu Dec 10 12:50:22 2020
+|Emetteur: julien.terrier3@wanadoo.fr
+|Objet: demande hosoroscope
+|Contenu: ca va bien
+
+ Date de reception : Thu Dec 10 13:48:18 2020
+|Emetteur: titi
+|Objet: toto
+|Contenu: tutu
+
+ Date de reception : Thu Dec 10 13:49:35 2020
+|Emetteur: julien.terrier@st.com
+|Objet: test
+|Contenu: itude
+
+ Date de reception : Thu Dec 10 13:51:10 2020
+|Emetteur: toto
+|Objet: test
+|Contenu: micro
+
+ Date de reception : Thu Dec 10 13:52:04 2020
+|Emetteur: toto
+|Objet: test 
+|Contenu: etude
+
+ Date de reception : Thu Dec 10 13:53:22 2020
+|Emetteur: julien.terrier@st.com
+|Objet: test
+|Contenu: test
+
+ Date de reception : Thu Dec 10 13:54:21 2020
+|Emetteur: test
+|Objet: test
+|Contenu: test
+
+ Date de reception : Thu Dec 10 14:15:11 2020
+|Emetteur: julien.terrier@st.com
+|Objet: soleil
+|Contenu: test
+
+ Date d envoi : Thu Dec 10 14:15:27 2020
+|Destinataire: madame
+|Objet: Re: soleil
+|Contenu: Pour un theme astral personalise, nous vous conseillons notre abonnement MERCURE a 49 euros par jour
+
+ Date de reception : Thu Dec 10 14:16:43 2020
+|Emetteur: test
+|Objet: mad
+|Contenu: mad
+
+ Date d envoi : Thu Dec 10 14:16:53 2020
+|Destinataire: mad
+|Objet: Re: mad
+|Contenu: 
+Merci pour votre email. Madame soleil prendra contact par telephone avec vous pour un theme astral personnalise
+
+
+ Date de reception : Thu Dec 10 14:17:08 2020
+|Emetteur: nouveau
+|Objet: mad
+|Contenu: mad
+
+ Date de reception : Thu Dec 10 14:26:29 2020
+|Emetteur: le nouveau
+|Objet: je suis balance et j'ai froid
+|Contenu: Je suis balance quel est mon horoscope merci
+
+ Date de reception : Thu Dec 10 14:27:25 2020
+|Emetteur: new
+|Objet: horos
+|Contenu: je suis n‚e le 09 octobre quel est mon avenir ?
+
+ Date de reception : Thu Dec 10 14:28:09 2020
+|Emetteur: newnew
+|Objet: horos
+|Contenu: je suis le 3 janvier j'ai mal au gencive
+
+ Date de reception : Thu Dec 10 14:41:14 2020
+|Emetteur: le new
+|Objet: demande d'horoscope
+|Contenu: je suis taureau dois je le prendre par les deux cornes ?
+
+ Date de reception : Thu Dec 10 14:58:17 2020
+|Emetteur: jaidubol
+|Objet: demande d'horoscope
+|Contenu: je suis capricorne
+
+ Date de reception : Thu Dec 10 14:59:45 2020
+|Emetteur: turlup
+|Objet: demande d'horoscope
+|Contenu: je suis n‚e le 28 avril quel sera mon salaire
+
+ Date de reception : Thu Dec 10 15:12:23 2020
+|Emetteur: test
+|Objet: demande d'horoscope
+|Contenu: je suis n‚e le 09 octobre est ce que je peux envisager le mariage
+
+ Date d envoi : Thu Dec 10 15:14:29 2020
+|Destinataire: madame.soleil@gmal.com
+|Objet: Re: demande d'horoscope
+|Contenu: 
+Merci pour votre email. Madame soleil prendra contact par telephone avec vous pour un theme astral personnalise
+
+
+ Date de reception : Thu Dec 10 15:31:42 2020
+|Emetteur: lele
+|Objet: demande d'horoscope
+|Contenu: je suis n‚e le 09 juillet vais-je avoir de la chance aux jeux?
+
+ Date de reception : Thu Dec 10 15:33:52 2020
+|Emetteur: tete@gmail.com
+|Objet: demande d'horoscope
+|Contenu: je suis nee le 09 juillet vais-je avoir de la chance aux jeux ?
+
+ Date de reception : Thu Dec 10 15:38:27 2020
+|Emetteur: nene@gmail.com
+|Objet: demande d'horoscope 
+|Contenu: je suis nee le 09 juillet est ce que je vais avoir de la chance ?
+
+ Date de reception : Thu Dec 10 15:43:46 2020
+|Emetteur: testmicro
+|Objet: demande horo
+|Contenu: je suis nee le 09 octobre ca va ?
+
+ Date de reception : Thu Dec 10 15:44:32 2020
+|Emetteur: tete
+|Objet: horo
+|Contenu: je suis nee le 09 juillet ca va ?
+
+ Date de reception : Thu Dec 10 15:45:13 2020
+|Emetteur: tt
+|Objet: tt
+|Contenu: je suis nee le 09 octobre ca va ?
+
+ Date de reception : Thu Dec 10 15:49:12 2020
+|Emetteur: test1
+|Objet: demande hoto
+|Contenu: je suis nee le 09 juillet test
+
+ Date de reception : Thu Dec 10 15:49:52 2020
+|Emetteur: test2
+|Objet: demande x
+|Contenu: je suis nee le 09 octobre test2
+
+ Date de reception : Thu Dec 10 15:50:48 2020
+|Emetteur: test3
+|Objet: test3
+|Contenu: je suis taureau test3
+
+ Date de reception : Thu Dec 10 15:51:46 2020
+|Emetteur: test4
+|Objet: test4
+|Contenu: je suis nee le 18 juin test4
+
+ Date de reception : Thu Dec 10 15:54:41 2020
+|Emetteur: test1
+|Objet: test1
+|Contenu: je suis nee le 18 juin testUn
+
+ Date de reception : Thu Dec 10 15:57:18 2020
+|Emetteur: test2
+|Objet: test2
+|Contenu: je suis nee le 09 octobre testDeux
+
+ Date de reception : Thu Dec 10 16:34:21 2020
+|Emetteur: test3
+|Objet: demande d'horoscope
+|Contenu: je suis nee le 10 mai testTrois
+
+ Date de reception : Thu Dec 10 16:35:08 2020
+|Emetteur: test
+|Objet: test4
+|Contenu: je suis nee le 18 juin testquatre
+
+ Date d envoi : Thu Dec 10 16:35:29 2020
+|Destinataire: test4
+|Objet: Re: test4
+|Contenu: 
+Merci pour votre email. Madame soleil prendra contact par telephone avec vous pour un theme astral personnalise
+
+
+ Date de reception : Thu Dec 10 16:35:41 2020
+|Emetteur: test5
+|Objet: test5
+|Contenu: je suis nee le 23 septembre test5
+
+ Date de reception : Thu Dec 10 16:36:38 2020
+|Emetteur: test6
+|Objet: test6
+|Contenu: je suis nee le 23 decembre test6
+
+ Date de reception : Thu Dec 10 16:37:19 2020
+|Emetteur: test7
+|Objet: test7
+|Contenu: je suis nee le 23 mai test7
+
+ Date de reception : Thu Dec 10 16:38:51 2020
+|Emetteur: test8
+|Objet: test8
+|Contenu: je suis nee le 18 f‚vrier
+
+ Date d envoi : Thu Dec 10 16:39:25 2020
+|Destinataire: test8
+|Objet: Re: test8
+|Contenu: 
+Votre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci
+
+
+ Date de reception : Thu Dec 10 16:39:40 2020
+|Emetteur: test9
+|Objet: test9
+|Contenu: je suis nee le 18 fevrier test9
+
+ Date de reception : Thu Dec 10 12:00:54 2020
+|Emetteur: 
+|Objet: balance
+|Contenu: sante
+
+ Date de reception : Thu Dec 10 12:02:02 2020
+|Emetteur: 
+|Objet: tatat
+|Contenu: scorpion 
+
+ Date de reception : Thu Dec 10 12:02:47 2020
+|Emetteur: 
+|Objet: demande d'horoscope
+|Contenu: je suis balance merci
+
+ Date de reception : Thu Dec 10 12:07:37 2020
+|Emetteur: julien.terrier@st.com
+|Objet: Demande d'horoscope
+|Contenu: je suis balance quel est mon horoscope du jour ?
+
+ Date d envoi : Thu Dec 10 12:08:35 2020
+|Destinataire: madame.soleil@gmail.com
+|Objet: Re: Demande d'horoscope
+|Contenu: 
+Pour un theme astral personalise, nous vous conseillons notre abonnement MERCURE a 49 euros par jour
+
+
+ Date de reception : Thu Dec 10 12:09:04 2020
+|Emetteur: beber.com
+|Objet: test1
+|Contenu: je suis nee le 09 octobre merci sante 
+
+ Date de reception : Thu Dec 10 12:09:58 2020
+|Emetteur: test2
+|Objet: test2
+|Contenu: je suis taureau amour 
+
+ Date de reception : Thu Dec 10 12:10:48 2020
+|Emetteur: test3
+|Objet: demande d'horoscope
+|Contenu: je suis cancer merci
+
+ Date de reception : Thu Dec 10 12:12:09 2020
+|Emetteur: test4
+|Objet: test4
+|Contenu: je suis Balance merci
+
+ Date d envoi : Thu Dec 10 12:12:24 2020
+|Destinataire: test4
+|Objet: Re: test4
+|Contenu: 
+Votre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci
+
