@@ -290,8 +290,6 @@ Pour un theme astral personalise, nous vous conseillons notre abonnement MERCURE
 |Contenu: 
 Votre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci
 
-<<<<<<< HEAD
-=======
 
  Date de reception : Thu Dec 10 21:18:03 2020
 |Emetteur: jean.neymar@foot.com
@@ -420,4 +418,3 @@ Ne vous lancez pas dans une activite physique eprouvante si cela fait longtemps 
 Theme Amour:
 Les energies du jour se font puissantes, magnetiques, possessives. Les relations sentimentales prennent des allures de melodrames, plutot trop que pas assez ! Ouvrez-vous … votre sixieme sens, particulierement developpe en cette journee. L'amour retentit tres fortement aujourd'hui !
 
->>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
