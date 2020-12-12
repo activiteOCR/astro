@@ -290,3 +290,134 @@ Pour un theme astral personalise, nous vous conseillons notre abonnement MERCURE
 |Contenu: 
 Votre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci
 
+<<<<<<< HEAD
+=======
+
+ Date de reception : Thu Dec 10 21:18:03 2020
+|Emetteur: jean.neymar@foot.com
+|Objet: Theme lion
+|Contenu: J'aime le foot
+
+ Date de reception : Thu Dec 10 21:46:58 2020
+|Emetteur: claude.reversat@st.com
+|Objet: Amour belier
+|Contenu: pour test reponse
+
+ Date de reception : Thu Dec 10 21:55:05 2020
+|Emetteur: 3
+|Objet: 3
+|Contenu: 3
+
+ Date d envoi : Thu Dec 10 21:55:52 2020
+|Destinataire: 3
+|Objet: Re: 3
+|Contenu: 
+Votre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci
+
+
+ Date de reception : Thu Dec 10 22:37:50 2020
+|Emetteur: Reversat.claude@isen.com
+|Objet: j'ai mal aux dents
+|Contenu: et je suis nÃ© le 31 decembre
+
+ Date de reception : Thu Dec 10 22:41:22 2020
+|Emetteur: reversat.claude@isen.fr
+|Objet: Belier
+|Contenu: j'ai mal au cul maintenant
+
+ Date d envoi : Thu Dec 10 22:41:54 2020
+|Destinataire: reversat.claude@isen.fr
+|Objet: Re: Belier
+|Contenu: 
+Votre date de naissance est manquante ou incomplete
+Nous ne sommes pas en mesure de vos donner votre theme astral.
+Veuillez preciser votre demande merci.
+Madame SOLEIL.
+
+ Date de reception : Thu Dec 10 22:42:22 2020
+|Emetteur: reversat.claude@isen.fr
+|Objet: belier
+|Contenu: et maintenant ca va mieux ?
+
+ Date de reception : Thu Dec 10 22:46:32 2020
+|Emetteur: ema.nymton@anonymous.com
+|Objet: cancer malade
+|Contenu: bla bla bla
+
+ Date d envoi : Thu Dec 10 22:47:11 2020
+|Destinataire: ema.nymton@anonymous.com
+|Objet: Re: cancer malade
+|Contenu: 
+Theme Sante:
+Vous n'etes pas a l'abri d'un petit incident sans gravite mais qui se revelerait particulierement genant pour votre organisation quotidienne. Preferez une pratique prudente et entouree de professionnels qui sauront vous faire profiter de leur experience afin de vous prodiguer de bons conseils.
+
+
+ Date de reception : Thu Dec 10 22:56:40 2020
+|Emetteur: fred.chairat@isen.com
+|Objet: Enfin un test 
+|Contenu: pour savoir mon theme du 12 octobre sur le sexe
+
+ Date d envoi : Thu Dec 10 22:57:49 2020
+|Destinataire: fred.chairat@isen.com
+|Objet: Re: Enfin un test 
+|Contenu: 
+Theme Amour:
+Vos proches peuvent compter sur votre sens pratique pour denouer toutes les situations, memes celles qui touchent les finances. Faites toutefois attention car cela pourrait fragiliser vos relations amoureuses. Vous prenez les choses en main, vous ne laissez rien au hasard, bravo.
+
+
+ Date de reception : Thu Dec 10 23:03:36 2020
+|Emetteur: Juju
+|Objet: sante
+|Contenu: pour le 21 novembre
+
+ Date d envoi : Thu Dec 10 23:04:29 2020
+|Destinataire: Juju
+|Objet: Re: sante
+|Contenu: 
+Theme Sante:
+Votre moral est tres fluctuant. Vous oscillez entre des moments de grandes joies et des instants un peu plus sombres ou vous avez besoin de solitude. Ne laissez pas vagabonder votre esprit, concentrez-vous sur les belles choses de la vie.
+
+
+ Date de reception : Thu Dec 10 23:06:00 2020
+|Emetteur: der de der
+|Objet: capricorne
+|Contenu: travail et amour
+
+ Date d envoi : Thu Dec 10 23:06:17 2020
+|Destinataire: der de der
+|Objet: Re: capricorne
+|Contenu: 
+Theme Amour:
+Voila une journee qui promet d'etre agitee ! Vous avez pour ambition d'occuper le devant de la scene pour conforter vos plans, de vous liberer de vos chaines ou d'imposer votre vision du monde et de l'avenir mais restez tolerant !
+
+
+ Date de reception : Thu Dec 10 23:08:57 2020
+|Emetteur: sandra.lacouverturecagratte@casserole.zebulon
+|Objet: j'ai sommeil la ca va plus
+|Contenu: bon donc pour le job c'est OK rdv le 14 avril et ne sois pas malade pour une fois
+
+ Date d envoi : Thu Dec 10 23:10:06 2020
+|Destinataire: sandra.lacouverturecagratte@casserole.zebulon
+|Objet: Re: j'ai sommeil la ca va plus
+
+Votre signe belier
+|Contenu: 
+Theme Sante:
+Ne vous lancez pas dans une activite physique eprouvante si cela fait longtemps que vous n'avez pas pratique de sport. Vous pourriez avoir tendance a surestimer vos capacites et voir la realite de votre condition vous rattraper plus vite que prevu. 
+
+
+ Date de reception : Thu Dec 10 23:13:12 2020
+|Emetteur: bobby
+|Objet: test
+|Contenu: amour cancer
+
+ Date d envoi : Thu Dec 10 23:13:32 2020
+|Destinataire: bobby
+|Objet: Re: test
+
+|Votre signe: cancer
+|Contenu: |
+Theme Amour:
+Les energies du jour se font puissantes, magnetiques, possessives. Les relations sentimentales prennent des allures de melodrames, plutot trop que pas assez ! Ouvrez-vous … votre sixieme sens, particulierement developpe en cette journee. L'amour retentit tres fortement aujourd'hui !
+
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b

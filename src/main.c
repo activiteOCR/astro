@@ -5,7 +5,11 @@
 #include "../inc/admin.h"
 #include "../inc/user.h"
 
+<<<<<<< HEAD
 # define ANS 1500
+=======
+# define ANS 3500
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 
 int main(int argc, char *argv[])
 {
@@ -112,8 +116,13 @@ void menu_utilisateur(FILE *rep, EMAIL *q)
 	int choix = 0;
 	int EM=-1;
     char proposition[]="\nPour un theme astral personalise, nous vous conseillons notre abonnement MERCURE a 49 euros par jour\n";
+<<<<<<< HEAD
 	char perso[]="\nMerci pour votre email. Madame soleil prendra contact par telephone avec vous pour un theme astral personnalise\n";
 	char erreur[]="\nVotre date de naissance est manquante ou incomplete, nous ne sommes pas en mesure de vos donner votre theme astral, veuillez preciser votre demande merci\n";
+=======
+	char perso[]="\nMerci pour votre email.\nGrace à votre abonnement MERCURE Madame SOLEIL prendra contact par telephone avec vous pour un theme astral personnalise\nA tres bientot....";
+	char erreur[]="\nVotre date de naissance est manquante ou incomplete\nNous ne sommes pas en mesure de vos donner votre theme astral.\nVeuillez preciser votre demande merci.\nMadame SOLEIL.";
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 	char zodiaque[11]="";
     int mois=0, jour=0;
 	int atheme=0,stheme=0,ttheme=0;
@@ -140,21 +149,35 @@ void menu_utilisateur(FILE *rep, EMAIL *q)
                         // réponse type en fct
                         if (EM==1) // abo OK réponse personnalisé
                         {
+<<<<<<< HEAD
                             ecriture_email(q,perso);
+=======
+                            ecriture_email(q,perso,zodiaque);
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
                             goto fin;
                             //choix = 3;
                         }
                         else if (EM==2) // deja dans la base client mais non abonné Proposition abonnement
                         {
+<<<<<<< HEAD
                             ecriture_email(q,proposition);
+=======
+                            ecriture_email(q,proposition,zodiaque);
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
                             goto fin;
                             //choix = 3;
                         }
                         else
                         {
                             rec_signe(zodiaque,sizeof(zodiaque),q); // recherche si son signe est indiqué
+<<<<<<< HEAD
                             //printf("\nsigne trouve = %s",zodiaque); // Pour test compil
                            // printf("\nlongueur signe = %d\n",strlen(zodiaque)); // Pour test compil
+=======
+                           
+                           //printf("\nsigne trouve = %s",zodiaque); // Pour test DEBUG
+                           //printf("\nlongueur signe = %d\n",strlen(zodiaque)); // Pour test DEBUG
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
                         }
 
                         // Si pas de signe donné recherche date et sinon envoi mail erreur predefini
@@ -162,9 +185,20 @@ void menu_utilisateur(FILE *rep, EMAIL *q)
                         {
                             mois=rec_mois(q); // recherche du mois de la date de naissance indiqué dans le mail
                             jour=rec_jour(q); // recherche du jour de la date de naissance indiqué dans le mail
+<<<<<<< HEAD
                             if (mois==0 || jour==0)
                             {
                                 ecriture_email(q,erreur);
+=======
+                            
+                            printf("\nMOIS trouve = %d",mois); // Pour test DEBUG
+                            printf("\nJOUR trouve = %d",jour); // Pour test DEBUG
+
+
+                            if (mois==0 || jour==0)
+                            {
+                                ecriture_email(q,erreur,zodiaque);
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
                                 goto fin;
                                 //choix = 3;
                             }
@@ -219,6 +253,10 @@ void menu_utilisateur(FILE *rep, EMAIL *q)
                             strcat(fullname, answer);
                             strcat(fullname,"\n");
                         }
+<<<<<<< HEAD
+=======
+                        ecriture_email(q,fullname,zodiaque);
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
                         memset(zodiaque,'0',11);
 				 break;
 			case 2 :    printf(" Aujourd'hui c'est votre jour de chance avec le code promo ILFAITSOLEIL404 vous obtiendrez une reduction 0.49 centimes d'euros sur votre abonnement\n");
@@ -273,6 +311,7 @@ void menu_admin(FILE *rep, FILE *fic, FILE *mot, REPONSE *p)
 			case 3 :	printf("Saisissez le mail du client a rechercher\n");
                         scanf("%s",nomrech);
                         rechercher_client (rep, nomrech);
+<<<<<<< HEAD
 				 break;
 
 			case 4 : 	printf("Saisissez le mail du client a supprimer\n");
@@ -300,6 +339,35 @@ void menu_admin(FILE *rep, FILE *fic, FILE *mot, REPONSE *p)
 				 break;
 			case 10 : 	effacer_mot_theme(mot);
 				 break;
+=======
+				 break;
+
+			case 4 : 	printf("Saisissez le mail du client a supprimer\n");
+                        scanf("%s",nomrech);
+                        effacer_client(rep,nomrech);
+				 break;
+
+			case 5 :    printf("Ajouter une reponse dans la bdd par signe et theme\n");
+                        saisie_mot_cle(fic, p);
+				 break;
+			case 6 :    printf("Afficher toutes les reponses\n");
+                        afficher_mot_cle(fic);
+				 break;
+			case 7 : 	printf("Afficher la reponse pour un signe et un theme choisi\n");
+                        printf("\nSaisissez un signe du zodiaque \n(belier / taureau / gemeaux \ncancer / lion  / vierge \nbalance / scorpion / sagittaire \ncapricorne / verseau / poissons )\n");
+                        scanf("%s",recsigne);
+                        printf("\nSaisissez un theme\n(amour / sante / travail)\n");
+                        scanf("%s",rectheme);
+                        rechercher_theme_signe(answer, recsigne, rectheme);
+                        //rechercher_theme_signe (fic, recsigne, rectheme);
+				 break;
+			case 8 : 	printf(" ici appel de la fonction supprimer un mot cle et sa reponse\n");
+				 break;
+			case 9 : 	saisir_nouveau_mot(mot);
+				 break;
+			case 10 : 	effacer_mot_theme(mot);
+				 break;
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 			case 11 : 	listing_mot_cle(mot);
 				 break;
 

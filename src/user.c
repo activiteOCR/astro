@@ -34,12 +34,17 @@ void rechercher_theme_signe(char *answer,char *recsigne,char *rectheme) // modif
 				verif=strlen(r.signe);
 				strncpy(answer,r.reponseTheme,3000);
 			}
+<<<<<<< HEAD
 		if (verif==0)
+=======
+			if (verif==0)
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 			{
 				printf("\nla recherche n a pas aboutie!\n");
     		}
     	}
     	else
+<<<<<<< HEAD
 	{
 		printf("\nl ouverture du fichier c'est mal passe!");
 	}
@@ -47,6 +52,15 @@ void rechercher_theme_signe(char *answer,char *recsigne,char *rectheme) // modif
 }
 
 void ecriture_email(EMAIL *q,char *reponse) // Fonction d'envoi d'email et enregistrement log
+=======
+		{
+			printf("\nl ouverture du fichier c'est mal passe!");
+		}
+		fclose(fic);
+}
+
+void ecriture_email(EMAIL *q,char *reponse,char *zodiaque) // Fonction d'envoi d'email et enregistrement log
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 {
 
 	// fonction de réponse et sotckage dans le Log.txt des emails envoyés
@@ -57,6 +71,7 @@ void ecriture_email(EMAIL *q,char *reponse) // Fonction d'envoi d'email et enreg
 	log=fopen("log.txt","a+");
 
 	// system("cls"); // Pour terminal windows
+<<<<<<< HEAD
 	// system("clear"); pour terminal systeme linux
 
 	printf("\n-----------------------------------------------");
@@ -67,6 +82,19 @@ void ecriture_email(EMAIL *q,char *reponse) // Fonction d'envoi d'email et enreg
 	if (log !=NULL)
 	{
 		fprintf(log,"\n Date d envoi : %s|Destinataire: %s\n|Objet: Re: %s\n|Contenu: %s\n",ctime(&now),q->adress_DEST,q->OBJ,reponse);
+=======
+	system("clear"); //pour terminal systeme linux
+
+	printf("\n-----------------------------------------------");
+	printf("\nFrom : madame.soleil@horoscope.fr");
+	printf("\nTo : %s",q->adress_EM);
+	printf("\nSujet : Re : %s",q->OBJ);
+	printf("\n\nVotre signe %s",zodiaque);
+	printf("\n%s",reponse);
+	if (log !=NULL)
+	{
+		fprintf(log,"\n Date d envoi : %s|Destinataire: %s\n|Objet: Re: %s\n\n|Votre signe: %s\n|Contenu: %s\n",ctime(&now),q->adress_EM,q->OBJ,zodiaque,reponse);
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 		// sans Email emetteur car on n'en a pas besoin ;)
 	}
 	fclose(log);
@@ -77,6 +105,7 @@ int calc_signe(int m, int j,char *zodiaque,size_t longzod) // Fonction de recher
 {
 	int decan=0;
 
+<<<<<<< HEAD
 	if ((m==1 && j<21) || (m==12 && j>20))
 		strncpy(zodiaque, "capricorne", longzod);
 	if ((m==2 && j<20) || (m==1 && j>=20))
@@ -100,6 +129,31 @@ int calc_signe(int m, int j,char *zodiaque,size_t longzod) // Fonction de recher
 	if ((m==11 && j<23) || (m==10 && j>=23))
 		strncpy(zodiaque, "scorpion", longzod);
 	if ((m==12 && j<21) || (m==11 && j>=22))
+=======
+	if ((m==1 && j<21) || (m==12 && j>=20))
+		strncpy(zodiaque, "capricorne", longzod);
+	if ((m==2 && j<20) || (m==1 && j>=21))
+		strncpy(zodiaque, "verseau", longzod);
+	if ((m==3 && j<21) || (m==2 && j>=20))
+		strncpy(zodiaque, "poisson", longzod);
+	if ((m==4 && j<21) || (m==3 && j>=21))
+		strncpy(zodiaque, "belier", longzod);
+	if ((m==5 && j<21) || (m==4 && j>=21))
+		strncpy(zodiaque, "taureau", longzod);
+	if ((m==6 && j<22) || (m==5 && j>=21))
+		strncpy(zodiaque, "gemaux", longzod);
+	if ((m==7 && j<24) || (m==6 && j>=22))
+		strncpy(zodiaque, "cancer", longzod);
+	if ((m==8 && j<24) || (m==7 && j>=24))
+		strncpy(zodiaque, "lion", longzod);
+	if ((m==9 && j<24) || (m==8 && j>=24))
+		strncpy(zodiaque, "vierge", longzod);
+	if ((m==10 && j<24) || (m==9 && j>=24))
+		strncpy(zodiaque, "balance", longzod);
+	if ((m==11 && j<23) || (m==10 && j>=24))
+		strncpy(zodiaque, "scorpion", longzod);
+	if ((m==12 && j<21) || (m==11 && j>=23))
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 		strncpy(zodiaque, "sagittaire", longzod);
 
 	// calcul du decan (simplifié)
@@ -181,6 +235,7 @@ int rec_cle_sante(EMAIL *q) // Fonction de recherche de mots cle pour trouver le
 	char *retour;
 	// ouverture du fichier de mots cles sante
 	cle=fopen("sante.txt","r");
+<<<<<<< HEAD
     if (cle==NULL)
 		{
         printf("\nPb d'ouverture du fichier sante.txt");
@@ -200,6 +255,27 @@ int rec_cle_sante(EMAIL *q) // Fonction de recherche de mots cle pour trouver le
 				return theme;
 			}
 		}
+=======
+    	if (cle==NULL)
+	{
+        	printf("\nPb d'ouverture du fichier sante.txt");
+	}
+
+	while (fscanf(cle,"%s", temp) !=EOF) //lit chaque mot du fichier de cle et le stock dans temp
+	{
+		// utilisation de strstr vs strcmp pour rechercher dans la totalité du texte de la structure EMAIL
+		retour = strstr(q->OBJ,temp);
+		if (retour==NULL)
+			retour=strstr(q->CORPS,temp); // Si pas de theme trouve dans OBJ on cheche dans CORPS
+		if (retour!= NULL) //recherche dans objet du MAIL et compare a chaque temp du fichier mot cle
+		{
+			theme=1;
+			printf("\ntheme trouve : sante");
+			printf("\nmot cle : =%s", temp);
+			return theme;
+		}
+	}
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 	fclose(cle);
 	return theme;
 }

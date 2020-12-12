@@ -17,4 +17,4 @@ clean:
 	rm -rf *.o
 
 deepclean:
-	rm -rf *.o main
+	rm -rf *.o astro

@@ -12,9 +12,5 @@ int rec_decan(EMAIL *);
 int rec_jour(EMAIL *);
 void rec_signe(char *,size_t,EMAIL *);
 int calc_signe(int,int,char *,size_t);
-<<<<<<< HEAD
-void ecriture_email(EMAIL *,char *);
-=======
 void ecriture_email(EMAIL *,char *,char *);
->>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
 void rechercher_theme_signe(char *answer,char *recsigne,char *rectheme);

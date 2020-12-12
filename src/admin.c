@@ -92,8 +92,13 @@ int rechercher_client (FILE *rep, char *nomrech)
         {
             printf("\nAffichage de la structure: Mail=%s, Signe=%s, Decan=%s, Abonnement=%s\n", p.mail, p.signe, p.decan, p.abonnement);
             trouve=strlen(p.abonnement);
+<<<<<<< HEAD
             if (strcmp(p.abonnement,"oui")==0) trouve=1; // pour exploitation par fred
             else trouve=2;// pour exploitation par fred
+=======
+            if (strcmp(p.abonnement,"oui")==0) trouve=1; // pour exploitation par fct fred
+            else trouve=2;// pour exploitation par fct fred
+>>>>>>> 3f96df3de673aff80548cb30cb36acd338f7703b
             return trouve;
         }
     }
