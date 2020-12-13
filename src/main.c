@@ -136,7 +136,7 @@ void menu_utilisateur(FILE *rep, EMAIL *q)
 		switch (choix)
 		{
 			case 1 :    saisie_email(q);
-                        EM=rechercher_client (rep, q->adress_EM);
+                        EM=rechercher_client (q->adress_EM);
                         // réponse type en fct
                         if (EM==1) // abo OK réponse personnalisé
                         {
@@ -271,44 +271,54 @@ void menu_admin(FILE *rep, FILE *fic, FILE *mot, REPONSE *p)
 
 		switch (choix)
 		{
-			case 1 : 	saisir_nouveau_client(rep);
-				 break;
+			case 1 : 	saisir_nouveau_client();
+				 	break;
 
-			case 2 : 	listing_client(rep);
-				 break;
+			case 2 : 	listing_client();
+				 	break;
 
 			case 3 :	printf("Saisissez le mail du client a rechercher\n");
-                        scanf("%s",nomrech);
-                        rechercher_client (rep, nomrech);
-				 break;
+                        		scanf("%s",nomrech);
+                        		rechercher_client (nomrech);
+				 	break;
 
 			case 4 : 	printf("Saisissez le mail du client a supprimer\n");
-                        scanf("%s",nomrech);
-                        effacer_client(rep,nomrech);
-				 break;
+                        		scanf("%s",nomrech);
+                        		effacer_client(nomrech);
+				 	break;
 
-			case 5 :    printf("Ajouter une reponse dans la bdd par signe et theme\n");
-                        saisie_mot_cle(fic, p);
-				 break;
-			case 6 :    printf("Afficher toutes les reponses\n");
-                        afficher_mot_cle(fic);
-				 break;
+			case 5 :    	printf("Ajouter une reponse dans la bdd par signe et theme\n");
+                        		saisie_reponse_theme(p);
+				 	break;
+				 	
+			case 6 :    	printf("Afficher toutes les reponses\n");
+                        		afficher_reponse_theme();
+				 	break;
+				 	
 			case 7 : 	printf("Afficher la reponse pour un signe et un theme choisi\n");
-                        printf("\nSaisissez un signe du zodiaque \n(belier / taureau / gemeaux \ncancer / lion  / vierge \nbalance / scorpion / sagittaire \ncapricorne / verseau / poissons )\n");
-                        scanf("%s",recsigne);
-                        printf("\nSaisissez un theme\n(amour / sante / travail)\n");
-                        scanf("%s",rectheme);
-                        rechercher_theme_signe(answer, recsigne, rectheme);
-                        //rechercher_theme_signe (fic, recsigne, rectheme);
-				 break;
-			case 8 : 	printf(" ici appel de la fonction supprimer un mot cle et sa reponse\n");
-				 break;
-			case 9 : 	saisir_nouveau_mot(mot);
-				 break;
-			case 10 : 	effacer_mot_theme(mot);
-				 break;
-			case 11 : 	listing_mot_cle(mot);
-				 break;
+                        		printf("\nSaisissez un signe du zodiaque \n(belier / taureau / gemeaux \ncancer / lion  / vierge \nbalance / scorpion / sagittaire \ncapricorne / verseau / poissons )\n");
+                        		scanf("%s",recsigne);
+                        		printf("\nSaisissez un theme\n(amour / sante / travail)\n");
+                        		scanf("%s",rectheme);
+                        		rechercher_theme_signe(answer, recsigne, rectheme);
+                       		break;
+				 	
+			case 8 : 	printf("supprimer la reponse pour un signe et un theme choisi\n");
+                        		printf("\nSaisissez un signe du zodiaque \n(belier / taureau / gemeaux \ncancer / lion  / vierge \nbalance / scorpion / sagittaire \ncapricorne / verseau / poissons )\n");
+                        		scanf("%s",recsigne);
+                        		printf("\nSaisissez un theme\n(amour / sante / travail)\n");
+                        		scanf("%s",rectheme);	
+					supprimer_reponse_theme(recsigne, rectheme);
+				 	break;
+				 	
+			case 9 : 	saisir_nouveau_motcle_theme();
+				 	break;
+				 	
+			case 10 : 	effacer_motcle_theme();
+				 	break;
+				 	
+			case 11 : 	listing_motcle_theme();
+				 	break;
 
 			default : break;
 		}

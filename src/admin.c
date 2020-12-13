@@ -7,8 +7,9 @@
 #include "../inc/admin.h"
 #include "../inc/user.h"
 
-void listing_client(FILE *rep)
+void listing_client()
 {
+	FILE *rep=NULL;
 	CLIENT p;
 
 	rep=fopen("bdd_client.txt","r");
@@ -25,8 +26,9 @@ void listing_client(FILE *rep)
 	printf("\n");
 }
 
-void saisir_nouveau_client(FILE *rep)
+void saisir_nouveau_client()
 {
+    FILE *rep=NULL;
     CLIENT p;
     rep=fopen("bdd_client.txt","a+");
     fseek(rep, 0, SEEK_END);
@@ -78,8 +80,9 @@ void saisir_nouveau_client(FILE *rep)
 	fclose(rep);
 }
 
-int rechercher_client (FILE *rep, char *nomrech)
+int rechercher_client ( char *nomrech)
 {
+	FILE *rep=NULL;
 	int trouve=0;
 	CLIENT p;
 
@@ -87,34 +90,35 @@ int rechercher_client (FILE *rep, char *nomrech)
 
 	fseek(rep, 0, SEEK_SET);
 	while (fscanf(rep,"%s %s %s %s", p.mail, p.signe, p.decan, p.abonnement) !=EOF)
-    {
+    	{
         if (strcmp(p.mail,nomrech)==0)
         {
-            printf("\nAffichage de la structure: Mail=%s, Signe=%s, Decan=%s, Abonnement=%s\n", p.mail, p.signe, p.decan, p.abonnement);
+            printf("\nAffichage des infos du client recherche: Mail=%s, Signe=%s, Decan=%s, Abonnement=%s\n", p.mail, p.signe, p.decan, p.abonnement);
             trouve=strlen(p.abonnement);
             if (strcmp(p.abonnement,"oui")==0) trouve=1; // pour exploitation par fct fred
             else trouve=2;// pour exploitation par fct fred
             return trouve;
         }
-    }
+    	}
 	if(trouve==0)
     {
-        printf("\n Vous n'avez pas d'abonnement il faut y remedier\n");
+        printf("\nLa personne n'est pas dans la base de donnees\n");
     }
 	return trouve;
 	fclose(rep);
 }
 
 
-void effacer_client (FILE *rep, char *nomrech)
+void effacer_client (char *nomrech)
 {
+	FILE *rep=NULL;
 	CLIENT p;
 	rep=fopen("bdd_client.txt","r");
 	fseek(rep, 0, SEEK_SET);
 	FILE *temp=NULL;
 	temp=fopen("bdd_client_tmp.txt","w+");
 	int trouve=0;
-	trouve=rechercher_client(rep,nomrech);
+	trouve=rechercher_client(nomrech);
 	while (fscanf(rep,"%s %s %s %s", p.mail, p.signe, p.decan, p.abonnement) !=EOF)
 	{
         if (strcmp(p.mail,nomrech)!=0)
@@ -134,8 +138,9 @@ void effacer_client (FILE *rep, char *nomrech)
 	remove("bdd_client_tmp.txt");
 }
 
-void saisie_mot_cle(FILE *fic, REPONSE *p)
+void saisie_reponse_theme(REPONSE *p)
 {
+	FILE *fic=NULL;
 	int testsig=0;
 	int testtheme=0;
 	int testdecan=0;
@@ -198,11 +203,12 @@ void saisie_mot_cle(FILE *fic, REPONSE *p)
 	fclose(fic);
 }
 
-void afficher_mot_cle(FILE *fic)
+void afficher_reponse_theme()
 {
 	REPONSE p;
+	FILE *fic=NULL;
+     	fic=fopen("reponse.dat","rb");
 
-     fic=fopen("reponse.dat","rb");
 
     if (fic==NULL)
 	{
@@ -216,7 +222,7 @@ void afficher_mot_cle(FILE *fic)
     if(fic != NULL)
     {
         while (fread(&p, sizeof(REPONSE), 1, fic))
-        printf("\nAffichage de la structure: signe=%s, theme=%s, \nreponse theme=%s, \ndecan=%s,\nreponse decan=%s", p.signe, p.theme, p.reponseTheme, p.decan, p.reponseDecan);
+        printf("\nPour le signe=%s et le theme=%s, la reponse associe est:\n%s\n", p.signe, p.theme, p.reponseTheme);
     }
     else
 	{
@@ -225,43 +231,35 @@ void afficher_mot_cle(FILE *fic)
     fclose(fic);
 }
 
-/*void rechercher_theme_signe(FILE *fic,char *recsigne,char *rectheme)
+void supprimer_reponse_theme(char *recsigne, char *rectheme)
 {
+	FILE *fic=NULL;
 	REPONSE p;
 	fic=fopen("reponse.dat","rb");
-	int verif=0;
-    if (fic==NULL)
-	{
-        printf("impossible d'ouvrir le fichier en lecture\n");
-		exit(EXIT_FAILURE); // equivalent a return EXIT_FAILURE;
-	}
-
-
 	fseek(fic, 0, SEEK_SET);
-
-    	if(fic != NULL)
-    	{
-        	while (fread(&p, sizeof(REPONSE), 1, fic))
-        	if ((strcmp(p.signe,recsigne)==0)&&(strcmp(p.theme,rectheme)==0))
-			{
-                printf("\nAffichage de la structure: signe=%s, theme=%s, \nreponse theme=%s, \ndecan=%s,\nreponse decan=%s", p.signe, p.theme, p.reponseTheme, p.decan, p.reponseDecan);
-                verif=strlen(p.signe);
-			}
-            if (verif==0)
-			{
-                printf("\nla recherche n a pas aboutie!\n");
-
-            }
-    	}
-    	else
+	FILE *temp=NULL;
+	temp=fopen("reponse_tmp.dat","wb+");
+	
+        while (fread(&p, sizeof(REPONSE), 1, fic))
+        if ((strcmp(p.signe,recsigne)==0)&&(strcmp(p.theme,rectheme)==0))
+	{
+                printf("\neffacement confirme\n");
+	}
+        else
         {
-            printf("\nl ouverture du fichier c'est mal passe!");
-        }
-    	fclose(fic);
-}*/
+                fwrite(&p, 1 , sizeof(REPONSE) , temp);
+                
+         }
 
-void saisir_nouveau_mot(FILE *mot)
+    	fclose(fic);
+    	fclose(temp);
+	remove("reponse.dat");
+	rename("reponse_tmp.dat", "reponse.dat");
+}
+
+void saisir_nouveau_motcle_theme()
 {
+	FILE *mot=NULL;
 	int choix = 0;
 	char nouveau[100];
 	int fin=0;
@@ -279,7 +277,7 @@ void saisir_nouveau_mot(FILE *mot)
 
 	switch (choix)
 		{
-			case 1 :    mot=fopen("sante.txt","a+");
+			case 1 :    	mot=fopen("sante.txt","a+");
     					fseek(mot, 0, SEEK_END);
     					if(mot != NULL)
                         {
@@ -352,8 +350,9 @@ void saisir_nouveau_mot(FILE *mot)
 		}
 }
 
-void effacer_mot_theme(FILE *mot)
+void effacer_motcle_theme()
 {
+	FILE *mot=NULL;
 	int choix = 0;
 	char asupprimer[100];
 	char fichier[100];
@@ -438,18 +437,19 @@ void effacer_mot_theme(FILE *mot)
                             printf("\neffacement confirme\n");
                             }
                         }
-                        fclose(mot);
-    					fclose(temp);
-                        remove("travail.txt");
-                        rename("travail_tmp.txt", "travail.txt");
-                        remove("travail_tmp.txt.txt");
-					break;
+                        	fclose(mot);
+    				fclose(temp);
+                        	remove("travail.txt");
+                        	rename("travail_tmp.txt", "travail.txt");
+                        	remove("travail_tmp.txt.txt");
+				break;
 			default : break;
 		}
 }
 
-void listing_mot_cle(FILE *mot)
+void listing_motcle_theme()
 {
+	FILE *mot=NULL;
 	int choix = 0;
 	char fichier[100];
 

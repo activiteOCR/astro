@@ -7,13 +7,14 @@ typedef struct{
     char abonnement[20];
 }CLIENT;
 
-void listing_client(FILE *rep);
-void saisir_nouveau_client(FILE *rep);
-int rechercher_client (FILE *rep, char *nomrech);
-void saisie_mot_cle(FILE *fic, REPONSE *p);
-void afficher_mot_cle(FILE *fic);
+void listing_client();
+void saisir_nouveau_client();
+int rechercher_client (char *nomrech);
+void saisie_reponse_theme(REPONSE *p);
+void afficher_reponse_theme();
+void supprimer_reponse_theme(char *recsigne, char *rectheme);
 //void rechercher_theme_signe(FILE *fic, char *recsigne, char *rectheme);
-void effacer_client (FILE *rep, char *nomrech);
-void saisir_nouveau_mot(FILE *mot);
-void effacer_mot_theme(FILE *mot);
-void listing_mot_cle(FILE *mot);
+void effacer_client (char *nomrech);
+void saisir_nouveau_motcle_theme();
+void effacer_motcle_theme();
+void listing_motcle_theme();
