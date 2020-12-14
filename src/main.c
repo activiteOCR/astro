@@ -259,7 +259,7 @@ void menu_admin(FILE *rep, FILE *fic, FILE *mot, REPONSE *p)
 			printf("5-Ajouter une reponse dans la bdd par signe et theme\n");
 			printf("6-Afficher les reponses par signes et par themes\n");
 			printf("7-Afficher la reponse par un signe et un theme choisi\n");
-			printf("8-Supprimer un mot cle et sa reponse\n");
+			printf("8-Supprimer la reponse pour un signe et un theme choisi\n");
 			printf("9-Ajouter un mot cle dans un theme\n");
 			printf("10-Supprimer un mot cle dans un theme\n");
 			printf("11-Afficher les mots cle pour un theme\n");
